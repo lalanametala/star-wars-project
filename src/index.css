@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: center;
 }
+@font-face {
+  font-family: "Star Jedi";
+  src: url(//db.onlinewebfonts.com/c/0c724f6aa457310440cf8949c615cbd7?family=Star+Jedi);
+}
 
 body {
   margin: 0;
