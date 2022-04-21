@@ -1,5 +1,6 @@
 {
   "name": "sd-0x-project-react-context-hooks-starwars-datatable-filters",
+  "homepage": "https://lalanametala.github.io/star-wars-project/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,6 +20,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test-coverage": "react-scripts test --coverage --watchAll=false",
