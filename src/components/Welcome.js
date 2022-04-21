@@ -27,7 +27,7 @@ function Welcome() {
       <div className="logo"><img src={ logo } alt="star wars logo" /></div>
       <div className="text-board">
         <div className="text-content">
-          <p className="text-title">Episode XV</p>
+          <p className="text-title">Episode XVII</p>
           <p className="text-subtitle">REACT HOOKS</p>
           <br />
           <p>
@@ -36,7 +36,7 @@ function Welcome() {
           </p>
           <p>
             {`In her quest for knowledge, Lalá has developed this application applying
-            the subjects from Block XV at Trybe's Web Development course:
+            the subjects from Block XVII at Trybe's Web Development course:
             Context API and Hooks.`}
           </p>
           <p>

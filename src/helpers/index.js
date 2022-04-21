@@ -31,24 +31,24 @@ export const nameSorter = (a, b) => {
   return 0;
 };
 
+const MINUS_ONE = -1;
+
 export const ascSorter = (a, b) => {
-  const minusOne = -1;
   if (+a.value > +b.value) {
     return 1;
   }
   if (+a.value < +b.value) {
-    return minusOne;
+    return MINUS_ONE;
   }
   return 0;
 };
 
 export const descSorter = (a, b) => {
-  const minusOne = -1;
   if (+a.value < +b.value) {
     return 1;
   }
   if (+a.value > +b.value) {
-    return minusOne;
+    return MINUS_ONE;
   }
   return 0;
 };
