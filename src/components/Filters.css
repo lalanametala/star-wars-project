@@ -11,10 +11,9 @@
   color: #e9ca1e;
   font-family: Star Jedi , News Cycle , arial , sans-serif;
   font-size: 2.5rem;
-  letter-spacing: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
   text-align: center;
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 2px;
 }
 
 .filters-form {
