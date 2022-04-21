@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/star-wars-project/static/css/main.2bbf4033.chunk.css",
-    "main.js": "/star-wars-project/static/js/main.81ddacb1.chunk.js",
-    "main.js.map": "/star-wars-project/static/js/main.81ddacb1.chunk.js.map",
+    "main.css": "/star-wars-project/static/css/main.580953cb.chunk.css",
+    "main.js": "/star-wars-project/static/js/main.ee696d5a.chunk.js",
+    "main.js.map": "/star-wars-project/static/js/main.ee696d5a.chunk.js.map",
     "runtime-main.js": "/star-wars-project/static/js/runtime-main.127fcb49.js",
     "runtime-main.js.map": "/star-wars-project/static/js/runtime-main.127fcb49.js.map",
     "static/js/2.0669b23a.chunk.js": "/star-wars-project/static/js/2.0669b23a.chunk.js",
     "static/js/2.0669b23a.chunk.js.map": "/star-wars-project/static/js/2.0669b23a.chunk.js.map",
     "index.html": "/star-wars-project/index.html",
-    "precache-manifest.410d5d19130e414bbb58f15a45bb58d7.js": "/star-wars-project/precache-manifest.410d5d19130e414bbb58f15a45bb58d7.js",
+    "precache-manifest.2fed8b83a928dfa09219c0666cc27330.js": "/star-wars-project/precache-manifest.2fed8b83a928dfa09219c0666cc27330.js",
     "service-worker.js": "/star-wars-project/service-worker.js",
-    "static/css/main.2bbf4033.chunk.css.map": "/star-wars-project/static/css/main.2bbf4033.chunk.css.map",
+    "static/css/main.580953cb.chunk.css.map": "/star-wars-project/static/css/main.580953cb.chunk.css.map",
     "static/js/2.0669b23a.chunk.js.LICENSE.txt": "/star-wars-project/static/js/2.0669b23a.chunk.js.LICENSE.txt",
     "static/media/Star_Wars_original_opening_crawl_1977.mp3": "/star-wars-project/static/media/Star_Wars_original_opening_crawl_1977.4d642cf9.mp3",
     "static/media/logo.svg": "/star-wars-project/static/media/logo.37da0be5.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.127fcb49.js",
     "static/js/2.0669b23a.chunk.js",
-    "static/css/main.2bbf4033.chunk.css",
-    "static/js/main.81ddacb1.chunk.js"
+    "static/css/main.580953cb.chunk.css",
+    "static/js/main.ee696d5a.chunk.js"
   ]
 }
