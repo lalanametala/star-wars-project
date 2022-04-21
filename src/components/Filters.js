@@ -48,11 +48,28 @@ function Filters({ pageRefs }) {
 
   const generateOptions = () => (
     <>
-      <option value="maior que">maior que</option>
-      <option value="menor que">menor que</option>
-      <option value="igual a">igual a</option>
+      <option value="maior que">GREATER THAN</option>
+      <option value="menor que">LESS THAN</option>
+      <option value="igual a">EQUAL TO</option>
     </>
   );
+
+  const toEnglish = (comparison) => {
+    switch (comparison) {
+    case 'maior que':
+      return 'GREATER THAN';
+    case 'menor que':
+      return 'LESS THAN';
+    default:
+      return 'EQUAL TO';
+    }
+  };
+
+  const removeDash = (category) => {
+    const splitted = category.split('_');
+    if (splitted.length === 1) return splitted[0];
+    return `${splitted[0]} ${splitted[1]}`;
+  };
 
   return (
     <div className="filters-div">
@@ -82,7 +99,7 @@ function Filters({ pageRefs }) {
             >
               {columnFilterOptions.map((filterOption) => (
                 <option key={ filterOption } value={ filterOption }>
-                  {filterOption}
+                  {removeDash(filterOption)}
                 </option>
               ))}
             </select>
@@ -129,7 +146,7 @@ function Filters({ pageRefs }) {
         {numericFilters.length > 0
           && numericFilters.map(({ column, comparison, value }) => (
             <div data-testid="filter" className="added-filter" key={ `${column}Filter` }>
-              <p>{`${column} ${comparison} ${value}`}</p>
+              <p>{`${removeDash(column)} ${toEnglish(comparison)} ${value}`}</p>
               <button
                 type="button"
                 name={ column }
