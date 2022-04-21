@@ -39,11 +39,18 @@ function AppProvider({ children }) {
         return acc.filter(filterCallback);
       };
       let newData = [];
+      const lowerCaseFilter = nameFilter.toLowerCase();
       if (numericFilters.length !== 0) {
         newData = numericFilters
-          .reduce(reduceCallback, []).filter(({ name }) => name.includes(nameFilter));
+          .reduce(reduceCallback, []).filter(({ name }) => {
+            const nameLowerCase = name.toLowerCase();
+            return nameLowerCase.includes(lowerCaseFilter);
+          });
       } else {
-        newData = planets.filter(({ name }) => name.includes(nameFilter));
+        newData = planets.filter(({ name }) => {
+          const nameLowerCase = name.toLowerCase();
+          return nameLowerCase.includes(lowerCaseFilter);
+        });
       }
       setData(newData);
       setDataClone(newData);
