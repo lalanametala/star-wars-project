@@ -3,7 +3,7 @@ import React, { useContext, useState } from 'react';
 import { BsTrash } from 'react-icons/bs';
 import { RiFilterFill, RiFilterOffFill } from 'react-icons/ri';
 import AppContext from '../context/AppContext';
-import { columnFilters } from '../helpers';
+import { columnFilters, removeDash } from '../helpers';
 import './Filters.css';
 
 function Filters({ pageRefs }) {
@@ -63,12 +63,6 @@ function Filters({ pageRefs }) {
     default:
       return 'EQUAL TO';
     }
-  };
-
-  const removeDash = (category) => {
-    const splitted = category.split('_');
-    if (splitted.length === 1) return splitted[0];
-    return `${splitted[0]} ${splitted[1]}`;
   };
 
   return (

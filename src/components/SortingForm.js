@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import AppContext from '../context/AppContext';
-import { columnFilters } from '../helpers';
+import { columnFilters, removeDash } from '../helpers';
 import './SortingForm.css';
 
 function SortingForm() {
@@ -68,8 +68,8 @@ function SortingForm() {
             onChange={ handleSelectChange }
           >
             {columnFilters.map((filterOption) => (
-              <option key={ `sort-${filterOption}` }>
-                {filterOption}
+              <option key={ `sort-${filterOption}` } value={ filterOption }>
+                {removeDash(filterOption)}
               </option>
             ))}
           </select>

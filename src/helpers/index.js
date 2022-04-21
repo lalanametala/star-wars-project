@@ -52,3 +52,9 @@ export const descSorter = (a, b) => {
   }
   return 0;
 };
+
+export const removeDash = (category) => {
+  const splitted = category.split('_');
+  if (splitted.length === 1) return splitted[0];
+  return `${splitted[0]} ${splitted[1]}`;
+};
