@@ -1,0 +1,10 @@
+main {
+  align-items: center;
+  align-self: center;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: column;
+  height: 98vh;
+  margin: 10px 200px;
+  z-index: 2;
+}

@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 97vw;
+}
+
+.music-btn, .table-focus {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: yellow;
+  font-size: xx-large;
+  height: max-content;
+}
+
+.music-btn:hover, .table-focus:hover {
+  cursor: pointer;
+}

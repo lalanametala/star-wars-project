@@ -1,0 +1,123 @@
+.sort-fieldset {
+  align-items: center;
+  display: flex;
+  font-family: News Cycle , sans-serif;
+  justify-content: space-between;
+  padding: 20px 40px;
+  width: 81%;
+  z-index: 2;
+}
+
+.sort-form {
+  align-items: flex-end;
+  display: flex;
+  font-family: News Cycle , sans-serif;
+  gap: 5px;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.sort-form label {
+  width: 45%;
+}
+
+.sort-form select {
+  background-color: black;
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: whitesmoke;
+  font-family: News Cycle , sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px;
+  width: 100%;
+}
+
+.sort-form select:hover {
+  border: 1px solid rgba(255, 255, 0, 0.5);
+  cursor: pointer;
+}
+
+.sort-form select:focus {
+  border: 1px solid yellow;
+}
+
+.sort-form option:checked {
+  background: #e9ca1e;
+  color: black;
+}
+
+.radio-container {
+  display: flex;
+  font-family: News Cycle , sans-serif;
+  gap: 20px;
+}
+
+.rad-label {
+  align-items: center;
+  color: rgb(216, 212, 212);
+  cursor: pointer;
+  display: flex;
+  margin: 10px 0;
+  padding: 4px 6px;
+}
+
+.rad-label:hover, .rad-label:focus-within {
+  background-color: rgba(128, 128, 128, 0.397);
+  color: white;
+}
+
+.rad-input {
+  height: 1px;
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+  z-index: -1;
+}
+
+.rad-design {
+  background: linear-gradient(to right bottom, gold, black);
+  border-radius: 100px;
+  height: 22px;
+  width: 22px;
+}
+
+.rad-design:before {
+  background: black;
+  border-radius: inherit;
+  content: '';
+  display: inline-block;
+  height: inherit;
+  transform: scale(1.1);
+  transition: 0.3s;
+  width: inherit;
+}
+
+.rad-input:checked + .rad-design:before {
+  transform: scale(0);
+}
+
+.rad-text {
+  font-size: 1rem;
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+.rad-input:checked ~ .rad-text {
+  color: yellow;
+}
+
+.sort-fieldset button {
+  background-color: #e9ca1e;
+  border: 1px solid rgba(0, 0, 0, 0);
+  font-family: News Cycle , sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px;
+  width: 15%;
+  z-index: 2;
+}
+
+.sort-fieldset button:hover {
+  border: 2px solid black;
+  cursor: pointer;
+}
